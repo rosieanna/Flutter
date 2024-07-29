@@ -7,10 +7,13 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage()
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Poppins'),
+      home: HomePage(),
     );
   }
 }
